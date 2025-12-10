@@ -1,6 +1,5 @@
-python -m venv myenv - создание VENV 
-.\myenv\Scripts\activate - включение
+### Дополнительные команды
 
-git remote add origin git@github.com:JackOefnLad/api-autotests.git
-git branch -M main
-git push -u origin main
+1. Дополнительные команды по установке и управлению VENV
+Создание - python -m venv myenv 
+Запуск venv - .\myenv\Scripts\activate
