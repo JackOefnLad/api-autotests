@@ -12,7 +12,7 @@ class RefreshRequestDict(TypedDict):
 class AuthenticationClient(APIClient):
     def login_api(self, request: LoginRequestDict)-> Response:
         return self.post("/api/v1/authentication/login", json=request)
-    def refresh_api(self,request):
+    def refresh_api(self,request: RefreshRequestDict):
         return self.post("/api/v1/authentication/refresh", json = request)
 # client = AuthenticationClient()
 # client.login_api({'email':'', 'password':''})
